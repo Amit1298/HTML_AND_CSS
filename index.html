@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Flex Box</title>
+        <style>
+            body {padding:2cm}
+            .headerContainer{
+               display: flex;
+               flex-flow: column wrap;
+               align-content: center;
+               background-color: blueviolet;
+               font-weight: bold;
+               /* padding: 10px; */
+            }
+            .footerContanier{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background-color: chocolate;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                 display: flex;
+                 flex-flow: row wrap;
+                 align-content: center;
+                 font-weight: bold;
+            }
+            .mainContainerItem{
+                flex: 3 0px;
+                text-align: center;
+                background: lightgoldenrodyellow;
+                order: 2;
+            }
+            .sideBarLeftItem{
+                background-color: gold;
+                order: 1;
+            }
+            .sideBarRightItem{
+                background-color: green;
+                order: 3;
+            }
+            .sideBarItem{
+                border: 2px solid blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header Class="headerContainer"><h1>Header - Flex Box</h1></header>
+        <div class="mainContainer">
+            <section class="mainContainerItem">
+                <article>
+                    <h2>First Articale</h2>
+                    <p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use theHere, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax</p>
+                    <h2>Second Articale</h2>
+                    <p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use theHere, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax</p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+       <!-- <h1 color="red"> hello </h1>
+       <h2> hello </h2>
+       <h3> hello </h3>
+       <h4> hello </h4>
+       <h5> hello </h5>
+       <h6> hello </h6> -->
+
+       <footer class="footerContanier">Footer</footer>
+    </body>
+</html>
